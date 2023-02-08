@@ -1,0 +1,39 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "League Spartan", sans-serif;
+}
+
+.control-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.homepage__hero-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.homepage__hero-img img {
+  width: 100vw;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=style.css.map */
