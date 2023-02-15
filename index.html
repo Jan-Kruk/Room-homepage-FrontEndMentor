@@ -13,8 +13,8 @@
 
   <title>Frontend Mentor | Room homepage</title>
 
-  <link rel="stylesheet" href="./dist/css/style.min.css">
   <link rel="stylesheet" href="./dist/css/hamburgers.min.css">
+  <link rel="stylesheet" href="./dist/css/style.min.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -31,79 +31,100 @@
 
 <body>
 
-  <div class="nav">
-    <button class="hamburger hamburger--spin" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <ul class="nav-menu">
-      <li class="nav__menu-item">home</li>
-      <li class="nav__menu-item">shop</li>
-      <li class="nav__menu-item">about</li>
-      <li class="nav__menu-item">contact</li>
-    </ul>
-  </div>
-  <div class="homepage">
-    <div class="homepage__hero">
-      <h1 class="homepage__hero-header">room</h1>
-      <div class="homepage__hero-images">
-        <img class="homepage__hero-images-img" src="./dist/img/mobile-image-hero-1.jpg"
-          alt="table with bonsai tree on top and chairs around">
-        <img class="homepage__hero-images-img" src="./dist/img/mobile-image-hero-2.jpg" alt="modern three chairs">
-        <img class="homepage__hero-images-img" src="./dist/img/mobile-image-hero-3.jpg" alt="black foldable chair">
-      </div>
-      <div class="control-buttons">
-        <div class="control-buttons__button control-buttons__button-left">
-          <img src="./dist/img/icon-angle-left.svg" alt="">
+  <div class="wrapper">
+    <div class="nav">
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <ul class="nav__menu">
+        <li class="nav__menu-item"><a href="#">home</a></li>
+        <li class="nav__menu-item"><a href="#">shop</a></li>
+        <li class="nav__menu-item"><a href="#">about</a></li>
+        <li class="nav__menu-item"><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div class="homepage">
+      <div class="homepage__hero">
+          <ul class="homepage__menu">
+            <li class="homepage__menu-item"><a href="#">home</a></li>
+            <li class="homepage__menu-item"><a href="#">shop</a></li>
+            <li class="homepage__menu-item"><a href="#">about</a></li>
+            <li class="homepage__menu-item"><a href="#">contact</a></li>
+          </ul>
+        <h1 class="homepage__hero-header">room</h1>
+        <div class="homepage__hero-images">
+          <!-- Mobile -->
+          <img class="homepage__hero-images-img mobile" src="./dist/img/mobile-image-hero-1.jpg"
+            alt="table with bonsai tree on top and chairs around">
+          <img class="homepage__hero-images-img mobile" src="./dist/img/mobile-image-hero-2.jpg"
+            alt="modern three chairs">
+          <img class="homepage__hero-images-img mobile" src="./dist/img/mobile-image-hero-3.jpg"
+            alt="black foldable chair">
+          <!-- Desktop -->
+          <img class="homepage__hero-images-img desktop" src="./dist/img/desktop-image-hero-1.jpg"
+            alt="table with bonsai tree on top and chairs around">
+          <img class="homepage__hero-images-img desktop" src="./dist/img/desktop-image-hero-2.jpg"
+            alt="modern three chairs">
+          <img class="homepage__hero-images-img desktop" src="./dist/img/desktop-image-hero-3.jpg"
+            alt="black foldable chair">
         </div>
-        <div class="control-buttons__button control-buttons__button-right">
-          <img src="./dist/img/icon-angle-right.svg" alt="">
+        <div class="control-buttons">
+          <div class="control-buttons__button control-buttons__button-left">
+            <img src="./dist/img/icon-angle-left.svg" alt="">
+          </div>
+          <div class="control-buttons__button control-buttons__button-right">
+            <img src="./dist/img/icon-angle-right.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="homepage__heroInfo">
-      <!-- first -->
-      <div class="homepage__heroInfo-text">
-        <h2 class="homepage__heroInfo-text-heading">Discover innovative ways to decorate</h2>
-        <p class="homepage__heroInfo-text-info"> We provide unmatched quality, comfort, and style for property owners
-          across the country.
-          Our experts combine form and function in bringing your vision to life. Create a room in your
-          own style with our collection and make your property a reflection of you and what you love.</p>
-        <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
-            alt=""></button>
+      <div class="homepage__heroInfo">
+        <!-- first -->
+        <div class="homepage__heroInfo-text">
+          <h2 class="homepage__heroInfo-text-heading">Discover innovative ways to decorate</h2>
+          <p class="homepage__heroInfo-text-info"> We provide unmatched quality, comfort, and style for property owners
+            across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.</p>
+          <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
+              alt=""></button>
+        </div>
+        <!-- second-->
+        <div class="homepage__heroInfo-text">
+          <h2 class="homepage__heroInfo-text-heading">We are available all across the globe</h2>
+          <p class="homepage__heroInfo-text-info"> With stores all over the world, it's easy for you to find furniture
+            for
+            your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.</p>
+          <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
+              alt=""></button>
+        </div>
+        <!-- third-->
+        <div class="homepage__heroInfo-text">
+          <h2 class="homepage__heroInfo-text-heading">Manufactured with the best materials</h2>
+          <p class="homepage__heroInfo-text-info"> Our modern furniture store provide a high level of quality. Our
+            company
+            has invested in advanced technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office.</p>
+          <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
+              alt=""></button>
+        </div>
       </div>
-      <!-- second-->
-      <div class="homepage__heroInfo-text">
-        <h2 class="homepage__heroInfo-text-heading">We are available all across the globe</h2>
-        <p class="homepage__heroInfo-text-info"> With stores all over the world, it's easy for you to find furniture for
-          your home or place of business.
-          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-          store locator. Any questions? Don't hesitate to contact us today.</p>
-        <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
-            alt=""></button>
+      <img class="homepage__about-img homepage__about-img--first" src="./dist/img/image-about-dark.jpg"
+        alt="two archmairs next to roundtable in the comfy room">
+      <div class="homepage__about-text">
+        <h3 class="homepage__about-text-heading">About our furniture</h3>
+        <p class="homepage__about-text-info">Our multifunctional collection blends design and function to suit your
+          individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
       </div>
-      <!-- third-->
-      <div class="homepage__heroInfo-text">
-        <h2 class="homepage__heroInfo-text-heading">Manufactured with the best materials</h2>
-        <p class="homepage__heroInfo-text-info"> Our modern furniture store provide a high level of quality. Our company
-          has invested in advanced technology
-          to ensure that every product is made as perfect and as consistent as possible. With three decades of
-          experience in this industry, we understand what customers want for their home and office.</p>
-        <button class="homepage__heroInfo-text-btn"><span>shop now</span> <img src="../dist/img/icon-arrow.svg"
-            alt=""></button>
-      </div>
+      <img src="./dist/img/image-about-light.jpg" alt="single modern chair in the room" class="homepage__about-img homepage__about-img--second">
     </div>
-    <img class="homepage__about-img" src="./dist/img/image-about-dark.jpg"
-      alt="two archmairs next to roundtable in the comfy room">
-    <div class="homepage__about-text">
-      <h3 class="homepage__about-text-heading">About our furniture</h3>
-      <p class="homepage__about-text-info">Our multifunctional collection blends design and function to suit your individual taste.
-        Make each room unique, or pick a cohesive theme that best express your interests and what
-        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-        or anything in between. Product specialists are available to help you create your dream space.</p>
-    </div>
-    <img src="./dist/img/image-about-light.jpg" alt="single modern chair in the room" class="homepage__about-img">
   </div>
 
 
